@@ -1,0 +1,30 @@
+[user]
+    name = Ashish Sharma
+    email = accssharma@gmail.com
+    signingKey = FD142A86
+
+[core]
+	editor = vim
+	excludesfile = ~/.config/git/global-ignore
+
+[merge]
+	ff = only
+	tool = gvimdiff
+	conflictstyle = diff3
+
+[status]
+	showUntrackedFiles = all
+
+[push]
+	default = simple
+
+[grep]
+    extendRegexp = true
+	lineNumber = true
+
+[pull]
+	ff = only
+
+[fetch]
+	prune = true
+

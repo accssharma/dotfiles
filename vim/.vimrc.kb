@@ -1,0 +1,141 @@
+" The following plugins settings is referred from: https://github.com/VundleVim/Vundle.vim
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo: A Git wrapper so awesome, it should be illegal
+Plugin 'tpope/vim-fugitive'
+Plugin 'gmarik/vundle.vim'
+
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks.
+Plugin 'airblade/vim-gitgutter'
+
+" Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast,
+" powerful configuration.
+Plugin 'kien/rainbow_parentheses.vim'
+
+" Vim plugin for previewing markup files(markdown,rdoc,textile,html)
+Plugin 'greyblake/vim-preview'
+
+" Vim files for editing Salt files
+Plugin 'saltstack/salt-vim'
+
+" Markdown Vim Mode http://plasticboy.com/markdown-vim-mode/
+Plugin 'tpope/vim-markdown'
+
+" surround.vim: quoting/parenthesizing made simple
+" http://www.vim.org/scripts/script.php…
+Plugin 'tpope/vim-surround'
+
+" integration of Scala into Vim - not a ton here, but useful
+Plugin 'derekwyatt/vim-scala'
+
+" A better JSON for Vim: distinct highlighting of keywords vs values,
+" JSON-specific (non-JS) warnings, quote concealing. Pathogen-friendly.
+Plugin 'elzr/vim-json'
+
+" https://vimawesome.com/plugin/vim-yaml-all-too-well
+Plugin 'stephpy/vim-yaml'
+
+" Syntax checking hacks for vim
+Plugin 'vim-syntastic/syntastic'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line"
+
+if &term=~'xterm'
+	set t_Co=256
+endif
+set autoread
+set wildmenu
+set wildignore=*.o,*~,*.pyc,*.pdf,*.class
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set expandtab
+set number
+set relativenumber
+syntax enable
+set wrap
+set textwidth=79
+set colorcolumn=76
+set encoding=utf-8
+set hidden
+set backspace=indent,eol,start
+set list
+set listchars=tab:→·,trail:·
+set cursorline
+set laststatus=2
+set noerrorbells
+set novisualbell
+set vb t_vb=
+set diffopt=filler,context:3,vertical
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax html,xml RainbowParenthesesLoadChevrons
+let mapleader = ","
+let g:gitgutter_enabled = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:vim_json_syntax_conceal = 0
+noremap <leader>r :RainbowParenthesesToggle<CR>
+noremap <leader>s :set spell!<CR>
+noremap <leader>h :%!xxd<CR>
+noremap <leader>d :%!xxd -r<CR>
+noremap <leader>g :GitGutterToggle<CR>
+noremap <leader>c :SyntasticToggleMode<CR>
+set directory=~/.vim/temp/
+set backupdir=~/.vim/backup/
+function! FileSize()
+    let bytes = getfsize(expand("%:p"))
+    if bytes <= 0
+        return ""
+    endif
+    if bytes < 1024
+        return "[" . bytes . "]"
+    elseif bytes < 1024 * 1024
+        return "[" . (bytes / 1024) . "k]"
+    else
+        return "[" . (bytes / (1024 * 1024)) . "M]"
+    endif
+endfunction
+set statusline=
+set statusline+=[%02n]
+set statusline+=%t
+set statusline+=%m
+set statusline+=%r
+set statusline+=%{FileSize()}
+set statusline+=%{fugitive#statusline()}
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%=
+set statusline+=[%{&fenc}]
+set statusline+=%y
+set statusline+=%3.3p%%
+set statusline+=%04.4l:%03c

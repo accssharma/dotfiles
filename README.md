@@ -1,5 +1,16 @@
 # Dotfiles
 
+## vim
+- References
+    - https://git.devnulllabs.io/dotfiles.git/tree/vim
+
+Run `:PluginInstall` to install the plugins using `Vundle`
+(https://github.com/VundleVim/Vundle.vim)
+
+## git
+- References
+    - https://git.devnulllabs.io/dotfiles.git/tree/git
+
 ## Sublime and Python:
 - References
     - https://www.youtube.com/watch?v=xFciV6Ew5r4
