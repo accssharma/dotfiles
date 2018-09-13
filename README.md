@@ -2,7 +2,19 @@
 
 - Author: Ashish Sharma<accssharma@gmail.com>
 
+## Acknowledgement
+
+- Some of the configuration files have been referred from the following authors 
+under [GNU GPLv3  License](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)):
+    - [Kenny Ballou](https://github.com/kennyballou/dotfiles)
+
+## License
+
+These dot files are available as Free Software under the GNU General Public
+License (version 3). For more information, please see the LICENSE text File.
+
 ## stow -- [a symlink farm manager](https://www.gnu.org/software/stow/)
+
 - Examples:
     - Create a symlink: from inside a root directory, run `stow git`
     - Delete all associated symlinks: run `stow -D git`
@@ -10,16 +22,16 @@
 - [Using GNU Stow to Manage Your  Dotfiles](http://www.kianmeng.org/2014/03/using-gnu-stow-to-manage-your-dotfiles.html)
 
 ## vim
-- References
-    - https://git.devnulllabs.io/dotfiles.git/tree/vim
 
 Run `:PluginInstall` to install the plugins using `Vundle`
 (https://github.com/VundleVim/Vundle.vim)
 
 ## Sublime and Python:
+
 - References
-    - https://www.youtube.com/watch?v=xFciV6Ew5r4
-    - Github: https://github.com/CoreyMSchafer/dotfiles/tree/master/init
+    - [Youtube](https://www.youtube.com/watch?v=xFciV6Ew5r4)
+    - [Github Repo](https://github.com/CoreyMSchafer/dotfiles/tree/master/init)
+
 - General packages installation
     - Predawn - dark interface and syntax theme 
     - Material Theme - enhanced theme
@@ -27,6 +39,7 @@ Run `:PluginInstall` to install the plugins using `Vundle`
     - SideBarEnhancements
     - Color scheme (Dayle Rees Color Schemes)
     - Emmet
+
 - Update Preference -> Settings: Theme and Fonts and Tabs [Example Reference](https://github.com/CoreyMSchafer/dotfiles/blob/master/init/Preferences.sublime-settings)
 - Python specific
     - Anaconda
