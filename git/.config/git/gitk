@@ -1,7 +1,7 @@
-set mainfont {{DejaVu Sans Mono} 12}
-set textfont {{DejaVu Sans Mono} 12}
-set uifont {{DejaVu Sans Mono} 12}
-set tabstop 4
+set mainfont {sans 9}
+set textfont {monospace 9}
+set uifont {sans 9 bold}
+set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
 set maxwidth 16
@@ -16,24 +16,23 @@ set hideremotes 0
 set showlocalchanges 1
 set datetimeformat {%Y-%m-%d %H:%M:%S}
 set limitdiffs 1
-set uicolor #3f3f3f
+set uicolor grey85
 set want_ttk 1
-set bgcolor #3f3f3f
-set fgcolor #efefef
-set uifgcolor #f0f0f0
+set bgcolor white
+set fgcolor black
+set uifgcolor black
 set uifgdisabledcolor #999
-set colors {"#7F9F7F" "#CC9393" "#8CD0D3" "#DC8CC3" darkgrey brown "#DFAF8F"}
-set diffcolors {{#dca3a3} #7f9f7f #8cd0d3}
-set mergecolors {red blue green purple brown "#009090" magenta "#808000"
-"#009000" "#ff0080" cyan "#b07070" "#70b0f0" "#70f0b0" "#f0b070" "#ff70b0"}
-set markbgcolor #c0bed1
+set colors {lime red blue magenta darkgrey brown orange}
+set diffcolors {red "#00a000" blue}
+set mergecolors {red blue lime purple brown "#009090" magenta "#808000" "#009000" "#ff0080" cyan "#b07070" "#70b0f0" "#70f0b0" "#f0b070" "#ff70b0"}
+set markbgcolor #e0e0ff
 set diffcontext 3
-set selectbgcolor #bc6c9c
+set selectbgcolor gray85
 set foundbgcolor yellow
 set currentsearchhitbgcolor orange
-set extdifftool opendiff
+set extdifftool meld
 set perfile_attrs 0
-set headbgcolor #7F9F7F
+set headbgcolor lime
 set headfgcolor black
 set headoutlinecolor black
 set remotebgcolor #ffddaa
@@ -46,18 +45,18 @@ set filesepfgcolor black
 set linehoverbgcolor #ffff80
 set linehoverfgcolor black
 set linehoveroutlinecolor black
-set mainheadcirclecolor #FF9800
-set workingfilescirclecolor #FF5C8D
-set indexcirclecolor #A6E22E
-set circlecolors {"#DCDCCC" "#8CD0D3" "#999999" "#8CD0D3" "#8CD0D3"}
-set linkfgcolor #D7D7AF
-set circleoutlinecolor #232323
-set geometry(main) 1333x855+0+19
+set mainheadcirclecolor yellow
+set workingfilescirclecolor red
+set indexcirclecolor lime
+set circlecolors {white blue gray blue blue}
+set linkfgcolor blue
+set circleoutlinecolor black
+set geometry(main) 1595x1012+321+18
 set geometry(state) normal
-set geometry(topwidth) 1333
-set geometry(topheight) 357
-set geometry(pwsash0) "968 1"
-set geometry(pwsash1) "1195 1"
-set geometry(botwidth) 738
-set geometry(botheight) 493
+set geometry(topwidth) 1595
+set geometry(topheight) 210
+set geometry(pwsash0) "825 1"
+set geometry(pwsash1) "957 1"
+set geometry(botwidth) 882
+set geometry(botheight) 797
 set permviews {}

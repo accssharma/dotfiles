@@ -1,4 +1,13 @@
-# Dotfiles
+# My Dotfiles Management
+
+- Author: Ashish Sharma<accssharma@gmail.com>
+
+## stow -- [a symlink farm manager](https://www.gnu.org/software/stow/)
+- Examples:
+    - Create a symlink: from inside a root directory, run `stow git`
+    - Delete all associated symlinks: run `stow -D git`
+- [Using stow to manage your  dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
+- [Using GNU Stow to Manage Your  Dotfiles](http://www.kianmeng.org/2014/03/using-gnu-stow-to-manage-your-dotfiles.html)
 
 ## vim
 - References
@@ -6,10 +15,6 @@
 
 Run `:PluginInstall` to install the plugins using `Vundle`
 (https://github.com/VundleVim/Vundle.vim)
-
-## git
-- References
-    - https://git.devnulllabs.io/dotfiles.git/tree/git
 
 ## Sublime and Python:
 - References
