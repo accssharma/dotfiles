@@ -1,17 +1,6 @@
 # My Dotfiles Management
 
-- Author: Ashish Sharma<accssharma@gmail.com>
-
-## Acknowledgement
-
-- Some of the configuration files have been referred from the following authors 
-under [GNU GPLv3  License](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)):
-    - [Kenny Ballou](https://github.com/kennyballou/dotfiles)
-
-## License
-
-These dot files are available as Free Software under the GNU General Public
-License (version 3). For more information, please see the LICENSE text File.
+- Author: Ashish Sharma (accssharma@gmail.com)
 
 ## stow -- [a symlink farm manager](https://www.gnu.org/software/stow/)
 
@@ -21,19 +10,25 @@ License (version 3). For more information, please see the LICENSE text File.
 - [Using stow to manage your  dotfiles](http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)
 - [Using GNU Stow to Manage Your  Dotfiles](http://www.kianmeng.org/2014/03/using-gnu-stow-to-manage-your-dotfiles.html)
 
-## vim
+## Populate Configuration files
+- Clone this repo to your home directory `${HOME}/dotfiles`
+- From the `${HOME}/dotfiles`, run the following commands:
+    - `stow vim`
+        -  Run `:PluginInstall` after setting up [Vundle](https://github.com/VundleVim/Vundle.vim)
+    - `stow git`
+    - `stow ssh`
+        - Requires ssh identities to have specific names
+    - `stow sublimetext3`
+        - Also install other useful packages (details below)
 
-Run `:PluginInstall` to install the plugins using `Vundle`
-(https://github.com/VundleVim/Vundle.vim)
-
-## Sublime and Python:
+## Sublime Preferences Specifically for Python:
 
 - References
     - [Youtube](https://www.youtube.com/watch?v=xFciV6Ew5r4)
     - [Github Repo](https://github.com/CoreyMSchafer/dotfiles/tree/master/init)
 
 - General packages installation
-    - Predawn - dark interface and syntax theme 
+    - Predawn - dark interface and syntax theme
     - Material Theme - enhanced theme
     - BracketHighlighter
     - SideBarEnhancements
@@ -66,4 +61,13 @@ Run `:PluginInstall` to install the plugins using `Vundle`
     - JSLint
 
 
+## Acknowledgement
 
+- Some of the configuration files have been referred from the following authors
+under [GNU GPLv3  License](https://tldrlegal.com/license/gnu-general-public-license-v3-(gpl-3)):
+    - [Kenny Ballou](https://github.com/kennyballou/dotfiles)
+
+## License
+
+These dot files are available as Free Software under the GNU General Public
+License (version 3). For more information, please see the LICENSE text File.
