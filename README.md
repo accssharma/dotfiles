@@ -19,7 +19,8 @@
     - `stow ssh`
         - Requires ssh identities to have specific names
     - `stow sublimetext3`
-        - Also install other useful packages (details below)
+        - Install the packages listed below first to avoid annoying
+          ambiguations.
 
 ## Sublime Preferences Specifically for Python:
 
@@ -56,6 +57,7 @@
     - Advanced New File
     - Git Gutter
     - DocBlockr
+    - DocBlockr_Python
     - SublimeLint
     - PHPCS
     - JSLint
