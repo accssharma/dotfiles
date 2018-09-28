@@ -16,6 +16,10 @@
     - `stow vim`
         -  Run `:PluginInstall` after setting up [Vundle](https://github.com/VundleVim/Vundle.vim)
     - `stow git`
+        - [Generate and Add new SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+    - `stow zsh`
+        - chsh -s \` which zsh \`
+        - [Optional] Try [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
     - `stow ssh`
         - Requires ssh identities to have specific names
     - `stow sublimetext3`
