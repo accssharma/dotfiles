@@ -320,8 +320,8 @@ set shiftwidth=4
 set tabstop=4
 
 " vertical rule for text width
-"set colorcolumn=+1
-"highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
+set colorcolumn=+1
+highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
 
 " line numbers preferred
 set number              " show line number of current line
