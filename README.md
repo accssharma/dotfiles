@@ -13,6 +13,7 @@
 ## Populate Configuration files
 - Clone this repo to your home directory `${HOME}/dotfiles`
 - From the `${HOME}/dotfiles`, run the following commands:
+    - `stow emacs.d`
     - `stow vim`
         -  Run `:PluginInstall` after setting up [Vundle](https://github.com/VundleVim/Vundle.vim)
     - `stow git`
