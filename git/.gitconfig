@@ -28,3 +28,8 @@
 [fetch]
 	prune = true
 
+[sendemail]
+    smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = accssharma@gmail.com
+	smtpServerPort = 587
