@@ -31,7 +31,7 @@
 (defun dark ()
   "Activate a dark color theme."
   (interactive)
-  (setq custom-enabled-themes '(sanityinc-tomorrow-bright))
+  (setq custom-enabled-themes '(sanityinc-tomorrow-night))
   (reapply-themes))
 
 
