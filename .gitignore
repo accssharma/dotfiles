@@ -1,5 +1,6 @@
 *~
 vim/.vim/bundle/*
+ssh/.ssh/config
 emacs.d/.emacs.d/elpa/*
 emacs.d/.emacs.d/elpa-26.1/*
 emacs.d/.emacs.d/.historian
