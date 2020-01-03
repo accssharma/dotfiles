@@ -19,7 +19,11 @@
       org-fast-tag-selection-single-key 'expert
       org-html-validation-link nil
       org-export-kill-product-buffer-when-displayed t
-      org-tags-column 80)
+      org-tags-column 80
+      org-directory "~/.org/"
+      org-agenda-files
+      (append
+       (file-expand-wildcards (concat org-directory "*.org"))))
 
 
 ;; Lots of stuff from http://doc.norang.ca/org-mode.html
@@ -114,11 +118,15 @@ typical word processor."
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-capture-templates
-      `(("t" "todo" entry (file "")  ; "" => `org-default-notes-file'
-         "* NEXT %?\n%U\n" :clock-resume t)
-        ("n" "note" entry (file "")
-         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)
-        ))
+      '(("j" "journal" entry
+         (file+olp+datetree "~/.org/journal.org")
+         "* %? :JOURNAL:\n%U\n" :clock-in t :clock-resume t)
+        ("t" "todo" entry
+         (file "~/.org/work.org")
+         "* NEXT %? :TODO:\n%U\n" :clock-in t :clock-resume t)
+        ("n" "note" entry
+         (file "~/.org/work.org")
+         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)))
 
 
 
