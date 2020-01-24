@@ -33,3 +33,12 @@
 	smtpServer = smtp.gmail.com
 	smtpUser = accssharma@gmail.com
 	smtpServerPort = 587
+
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff=auto
+
+[github]
+	user = accssharma
