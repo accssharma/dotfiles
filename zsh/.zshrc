@@ -2,9 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/asharma/.oh-my-zsh
+  export ZSH=$HOME/.oh-my-zsh
   export JAVA_HOME=/usr/lib/jvm/java-8-oraclei
-  export PATH="$PATH:/home/asharma/.config/composer/vendor/bin"
+  export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -59,8 +59,14 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/asharma/.miniconda3/bin:$PATH"
+export PATH="$HOME/.miniconda3/bin:$PATH"
+export GOPATH=$HOME/projects/homecu/go-projects
+export PATH=$PATH:/usr/local/go/bin
 
+# virtualenvwrapper specific variables
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source $HOME/.local/bin/virtualenvwrapper.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
