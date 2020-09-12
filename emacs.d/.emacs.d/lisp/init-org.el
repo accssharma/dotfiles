@@ -123,7 +123,7 @@ typical word processor."
          "* %? :JOURNAL:\n%U\n" :clock-in t :clock-resume t)
         ("t" "todo" entry
          (file "~/.org/work.org")
-         "* NEXT %? :TODO:\n%U\n" :clock-in t :clock-resume t)
+         "* TODO %? :TODO:\n%U\n" :clock-in t :clock-resume t)
         ("n" "note" entry
          (file "~/.org/work.org")
          "* %? :NOTE:\n%U\n%a\n" :clock-resume t)))
