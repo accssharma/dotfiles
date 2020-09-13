@@ -113,20 +113,21 @@ typical word processor."
 
 (setq org-support-shift-select t)
 
-;;; Capturing
 
+;;; Capturing
+(require 'org-id)
 (global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-capture-templates
-      '(("j" "journal" entry
-         (file+olp+datetree "~/.org/journal.org")
-         "* %? :JOURNAL:\n%U\n" :clock-in t :clock-resume t)
-        ("t" "todo" entry
-         (file "~/.org/work.org")
-         "* TODO %? :TODO:\n%U\n" :clock-in t :clock-resume t)
-        ("n" "note" entry
-         (file "~/.org/work.org")
-         "* %? :NOTE:\n%U\n%a\n" :clock-resume t)))
+      '(("j" "Journal" entry (file+olp+datetree "~/.org/journal.org")
+         (file "~/.emacs.d/org-captures/JOURNAL") :clock-in t :clock-resume t)
+        ("t" "To-Do" entry (file "~/.org/work.org")
+         (file "~/.emacs.d/org-captures/TODO") :clock-in t :clock-resume t)
+        ("n" "Note" entry (file "~/.org/notes.org")
+         (file "~/.emacs.d/org-captures/NOTE") :clock-resume t)
+        ("m" "Meeting" entry (file "~/.org/meetings.org")
+         (file "~/.emacs.d/org-captures/MEETING") :clock-in t :clock-resume t)
+        ))
 
 
 
