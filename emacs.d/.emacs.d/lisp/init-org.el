@@ -127,6 +127,8 @@ typical word processor."
          (file "~/.emacs.d/org-captures/NOTE") :clock-resume t)
         ("m" "Meeting" entry (file "~/.org/meetings.org")
          (file "~/.emacs.d/org-captures/MEETING") :clock-in t :clock-resume t)
+        ("r" "Non Essential (Breaks, Lunch, Phone Call, Personal Time, etc.)" entry (file "~/.org/recess.org")
+         (file "~/.emacs.d/org-captures/NONESSENTIAL") :clock-in t :clock-resume t)
         ))
 
 
